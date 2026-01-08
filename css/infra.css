@@ -1,10 +1,101 @@
 /* Infrastructure Section */
+
+/* Legacy Grid (keeping for compatibility) */
 .infra-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 2rem;
 }
 
+/* New 2x2 Grid Layout */
+.infra-grid-2x2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+}
+
+@media (max-width: 768px) {
+    .infra-grid-2x2 {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Compact Infrastructure Card */
+.infra-card-compact {
+    background: rgba(20, 20, 35, 0.4);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.infra-card-compact:hover {
+    background: var(--card-bg);
+    transform: translateY(-3px);
+    border-color: var(--accent-color);
+    box-shadow: 0 8px 25px -10px rgba(100, 255, 218, 0.15);
+}
+
+.infra-card-compact::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, var(--accent-color), transparent);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.infra-card-compact:hover::before {
+    opacity: 1;
+}
+
+.infra-header {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.infra-emoji {
+    font-size: 1.5rem;
+}
+
+.infra-card-compact h3 {
+    font-size: 1.1rem;
+    margin: 0;
+    color: #fff;
+}
+
+.infra-card-compact .infra-desc {
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+    line-height: 1.4;
+    color: var(--text-secondary);
+    min-height: auto;
+}
+
+.infra-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.infra-tags span {
+    font-size: 0.75rem;
+    padding: 0.25rem 0.6rem;
+    background: rgba(100, 255, 218, 0.1);
+    border: 1px solid rgba(100, 255, 218, 0.2);
+    border-radius: 4px;
+    color: var(--accent-color);
+}
+
+/* Legacy Card Styles */
 .infra-card {
     background: rgba(20, 20, 35, 0.4);
     border: 1px solid var(--border-color);
