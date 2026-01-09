@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vinsoo Agent - Technical Report | SOTA on SWE-bench Lite</title>
-    <meta name="description" content="Vinsoo Agent achieves 88% on SWE-bench Lite with qwen3-max, surpassing Claude-based AI coding tools.">
+    <meta name="description" content="Vinsoo Agent achieves 88.66% on SWE-bench Lite with qwen3-max, surpassing Claude-based AI coding tools.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&amp;family=Space+Grotesk:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet">
@@ -41,17 +41,17 @@
                 <p class="hero-subtitle" data-en="Cloud-Based Secure AI Agent Team for Software Development" data-zh="云端安全 AI Agent 团队，驱动软件开发">
                     Cloud-Based Secure AI Agent Team for Software Development
                 </p>
-                <p class="hero-tagline" data-en="Achieving SOTA with a cost-effective model — proving that cutting-edge AI coding doesn't require expensive proprietary APIs." 
-                   data-zh="使用高性价比模型达到 SOTA —— 证明尖端 AI 编程无需昂贵的专有 API。">
-                    Achieving SOTA with a cost-effective model — proving breakthrough results don't require expensive APIs.
+                <p class="hero-tagline" data-en="An 88.66% SWE-bench Lite result that makes AI coding more broadly usable: reducing the cost of solving complex engineering tasks by ~10×, with further cost optimizations ahead through better agent strategies." 
+                   data-zh="我们在 SWE-bench Lite 上取得 88.66% 成绩，让 AI 编程更易于普遍应用：将复杂工程任务的解决成本显著降低约 10 倍，并且未来可通过更强的 Agent 策略继续进一步降本。">
+                    An 88.66% SWE-bench Lite result that makes AI coding more broadly usable: reducing the cost of solving complex engineering tasks by ~10×, with further optimizations ahead.
                 </p>
                 <div class="score-card">
                     <div class="score-item highlight-score">
-                        <span class="score-value">88%</span>
+                        <span class="score-value">88.66%</span>
                         <span class="score-label">Pass@1</span>
                     </div>
                     <div class="score-item">
-                        <span class="score-value">264/300</span>
+                        <span class="score-value">266/300</span>
                         <span class="score-label" data-en="Solved" data-zh="已解决">Solved</span>
                     </div>
                     <div class="score-item">
@@ -100,9 +100,9 @@
         <section id="abstract" class="section card">
             <h2 data-en="Abstract" data-zh="摘要">Abstract</h2>
             <div class="content">
-                <p data-en="Vinsoo is an AI coding agent launched by AIYouthLab, featuring an automated project development process from requirement confirmation to delivery and acceptance. Using the cost-effective Qwen3-max model, Vinsoo has achieved state-of-the-art performance on SWE-bench Lite with an 88% success rate (264/300 tasks), surpassing popular AI coding products such as Cursor, Codex, and Claude Code."
-                   data-zh="Vinsoo 是芸思智能（AIYouthLab）推出的 AI 编程智能体，主打从需求确认到交付验收，AI 全流程自动推进项目开发。使用高性价比的 Qwen3-max 模型，Vinsoo 在 SWE-bench Lite 上取得了 88% 的 SOTA 成绩（解决 264/300 个任务），超越了 Cursor、Codex、Claude Code 等流行 AI 编程产品。">
-                   Vinsoo is an AI coding agent launched by AIYouthLab, featuring an automated project development process. Using the cost-effective Qwen3-max model, Vinsoo achieved 88% on SWE-bench Lite (264/300 tasks).
+                <p data-en="Vinsoo is an AI coding agent launched by AIYouthLab, featuring an automated project development process from requirement confirmation to delivery and acceptance. Using the cost-effective Qwen3-max model, Vinsoo has achieved state-of-the-art performance on SWE-bench Lite with an 88.66% success rate (266/300 tasks), surpassing popular AI coding products such as Cursor, Codex, and Claude Code."
+                   data-zh="Vinsoo 是芸思智能（AIYouthLab）推出的 AI 编程智能体，主打从需求确认到交付验收，AI 全流程自动推进项目开发。使用高性价比的 Qwen3-max 模型，Vinsoo 在 SWE-bench Lite 上取得了 88.66% 的 SOTA 成绩（解决 266/300 个任务），超越了 Cursor、Codex、Claude Code 等流行 AI 编程产品。">
+                   Vinsoo is an AI coding agent launched by AIYouthLab, featuring an automated project development process. Using the cost-effective Qwen3-max model, Vinsoo achieved 88.66% on SWE-bench Lite (266/300 tasks).
                 </p>
                 <p class="highlight-text" data-en="What sets Vinsoo apart is that it independently drives the entire development process — from understanding requirements, to writing code, to testing and debugging — without human intervention at each step."
                    data-zh="Vinsoo 的独特之处在于：它能独立驱动整个开发流程 —— 从理解需求、编写代码到测试调试 —— 无需人工干预每个步骤。">
@@ -129,7 +129,7 @@
                             <td>🥇 1</td>
                             <td><strong>Vinsoo Agent</strong></td>
                             <td>Qwen3-max</td>
-                            <td><strong>88.00%</strong></td>
+                            <td><strong>88.66%</strong></td>
                         </tr>
                         <tr>
                             <td>2</td>
@@ -594,9 +594,9 @@
         <section id="results" class="section card">
             <h2 data-en="Evaluation Results" data-zh="评估结果">Evaluation Results</h2>
             <div class="results-summary">
-                <p data-en="Out of 300 tasks in SWE-bench Lite, Vinsoo Agent solved 264 — achieving an 88% success rate. This represents a significant leap over previous state-of-the-art systems."
-                   data-zh="在 SWE-bench Lite 的 300 个任务中，Vinsoo Agent 解决了 264 个，成功率达到 88%。这相比此前的最佳结果有明显提升。">
-                   Out of 300 tasks in SWE-bench Lite, Vinsoo Agent solved 264 — achieving an 88% success rate.
+                <p data-en="Out of 300 tasks in SWE-bench Lite, Vinsoo Agent solved 266 — achieving an 88.66% success rate. This represents a significant leap over previous state-of-the-art systems."
+                   data-zh="在 SWE-bench Lite 的 300 个任务中，Vinsoo Agent 解决了 266 个，成功率达到 88.66%。这相比此前的最佳结果有明显提升。">
+                   Out of 300 tasks in SWE-bench Lite, Vinsoo Agent solved 266 — achieving an 88.66% success rate.
                 </p>
             </div>
             <div class="results-table-container">
@@ -614,7 +614,7 @@
                         </tr>
                         <tr>
                             <td data-en="Solved Tasks" data-zh="解决数量">Solved Tasks</td>
-                            <td>264</td>
+                            <td>266</td>
                         </tr>
                         <tr>
                             <td data-en="Unsolved Tasks" data-zh="未解决数量">Unsolved Tasks</td>
@@ -622,7 +622,7 @@
                         </tr>
                         <tr class="highlight-row">
                             <td data-en="Success Rate" data-zh="成功率">Success Rate</td>
-                            <td><strong>88.0%</strong></td>
+                            <td><strong>88.66%</strong></td>
                         </tr>
                     </tbody>
                 </table>
@@ -632,17 +632,17 @@
         <!-- Impact for Developers -->
         <section id="impact" class="section card">
             <h2 data-en="Impact for Developers" data-zh="开发者价值">Impact for Developers</h2>
-            <p class="section-intro" data-en="This isn't just about ranking highly on a benchmark — it's about real-world coding impact. What does an 88% solve rate on SWE-bench mean for your daily work?"
-               data-zh="这不仅仅是在基准测试上排名靠前 —— 而是关于真实世界的编程影响。SWE-bench 上 88% 的解决率对你的日常工作意味着什么？">
+            <p class="section-intro" data-en="This isn't just about ranking highly on a benchmark — it's about real-world coding impact. What does an 88.66% solve rate on SWE-bench mean for your daily work?"
+               data-zh="这不仅仅是在基准测试上排名靠前 —— 而是关于真实世界的编程影响。SWE-bench 上 88.66% 的解决率对你的日常工作意味着什么？">
                This isn't just about benchmarks — it's about real-world impact:
             </p>
             <div class="impact-grid-2col">
                 <div class="impact-item large">
                     <span class="impact-icon">🚀</span>
                     <h4 data-en="Performance Breakthrough" data-zh="性能突破">Performance Breakthrough</h4>
-                    <p data-en="88% solve rate on SWE-bench Lite — 28 percentage points ahead of second place. Using a cost-effective model to achieve world-leading performance." 
-                       data-zh="SWE-bench Lite 上 88% 的解决率 —— 领先第二名 28 个百分点。使用高性价比模型达到世界领先性能。">
-                       88% solve rate — 28 points ahead of #2.
+                    <p data-en="88.66% solve rate on SWE-bench Lite — 28 percentage points ahead of second place. Using a cost-effective model to achieve world-leading performance." 
+                       data-zh="SWE-bench Lite 上 88.66% 的解决率 —— 领先第二名 28 个百分点。使用高性价比模型达到世界领先性能。">
+                       88.66% solve rate — 28 points ahead of #2.
                     </p>
                 </div>
                 <div class="impact-item large">
@@ -685,8 +685,8 @@
         <!-- CTA Section -->
         <section id="cta" class="section cta-section">
             <h2 data-en="Experience Vinsoo Today" data-zh="立即体验 Vinsoo">Experience Vinsoo Today</h2>
-            <p data-en="The same AI Agent that achieves 88% on SWE-bench Lite is available in Vinsoo — ready to accelerate your development workflow."
-               data-zh="在 SWE-bench Lite 上达到 88% 的同款 AI Agent 已在 Vinsoo 中提供 —— 准备好加速你的开发工作流。">
+            <p data-en="The same AI Agent that achieves 88.66% on SWE-bench Lite is available in Vinsoo — ready to accelerate your development workflow."
+               data-zh="在 SWE-bench Lite 上达到 88.66% 的同款 AI Agent 已在 Vinsoo 中提供 —— 准备好加速你的开发工作流。">
                The same AI Agent is available in Vinsoo — ready to accelerate your workflow.
             </p>
             <div class="cta-buttons">
